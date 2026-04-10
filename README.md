@@ -323,7 +323,7 @@ Copyright (c) 2026 6twf (S4RKU)
 
 ## 💬 Support
 
-- **Discord**: [6twf](https://discord.gg/simps)
+- **Discord**: [6twf](https://discord.com/users/1380398730188034178)
 - **GitHub**: [S4RKU](https://github.com/s4rku)
 - **Discord Server**: [Join S4RKU's Community](https://discord.gg/simps)
 - **Issues**: [Report a bug](https://github.com/s4rku/S4RKU-s-Sniper/issues)
