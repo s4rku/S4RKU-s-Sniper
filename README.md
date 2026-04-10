@@ -90,7 +90,7 @@ chmod +x setup.sh
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/s4rku/S4RKU's Sniper.git
+git clone https://github.com/s4rku/S4RKU-s-Sniper.git
 cd S4RKU's Sniper
 ```
 
@@ -326,7 +326,7 @@ Copyright (c) 2026 6twf (S4RKU)
 - **Discord**: [6twf](https://discord.gg/simps)
 - **GitHub**: [S4RKU](https://github.com/s4rku)
 - **Discord Server**: [Join S4RKU's Community](https://discord.gg/simps)
-- **Issues**: [Report a bug](https://github.com/s4rku/S4RKU's Sniper/issues)
+- **Issues**: [Report a bug](https://github.com/s4rku/S4RKU-s-Sniper/issues)
 
 ---
 

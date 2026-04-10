@@ -74,4 +74,4 @@ All notable changes to this project will be documented in this file.
 
 **Developer:** 6twf (S4RKU)  
 **License:** MIT  
-**Repository:** https://github.com/s4rku/S4RKU's Sniper
+**Repository:** https://github.com/s4rku/S4RKU-s-Sniper

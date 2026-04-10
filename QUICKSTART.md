@@ -188,7 +188,7 @@ Before you start sniping, make sure:
 ### Get Support
 
 - 📖 Read the full [README.md](README.md)
-- 🐛 Report issues on [GitHub](https://github.com/s4rku/S4RKU's Sniper/issues)
+- 🐛 Report issues on [GitHub](https://github.com/s4rku/S4RKU-s-Sniper/issues)
 - 💬 Join our [Discord server](https://discord.gg/simps)
 
 ---
