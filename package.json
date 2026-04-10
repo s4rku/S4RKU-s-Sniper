@@ -1,0 +1,38 @@
+{
+  "name": "S4RKU's Sniper",
+  "version": "1.0.0",
+  "description": "Lightning-fast Discord vanity URL sniping tool with MFA bypass",
+  "main": "snipe.js",
+  "type": "module",
+  "scripts": {
+    "start": "node snipe.js",
+    "setup": "npm install",
+    "setup:windows": "npm install && copy config.example.json config.json",
+    "config:copy": "copy config.example.json config.json",
+    "config:copy:unix": "cp config.example.json config.json"
+  },
+  "keywords": [
+    "discord",
+    "vanity",
+    "sniper",
+    "snipe",
+    "mfa-bypass"
+  ],
+  "author": "6twf (S4RKU)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s4rku/S4RKU's Sniper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/s4rku/S4RKU's Sniper/issues"
+  },
+  "homepage": "https://github.com/s4rku/S4RKU's Sniper#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord.js-selfbot-v13": "^3.6.1"
+  },
+  "engines": {
+    "node": ">=20.18.0"
+  }
+}

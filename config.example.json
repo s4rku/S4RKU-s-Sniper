@@ -1,0 +1,27 @@
+{
+  "_metadata": {
+    "name": "Vanity Sniper - Discord Vanity URL Sniping Tool",
+    "version": "1.0.0",
+    "author": "s4rku (@6twf)"
+  },
+  "_instructions": {
+    "step_1": "Copy this file to 'config.json'",
+    "step_2": "Replace all placeholder values with your actual credentials",
+    "step_3": "Get your Discord token from Discord Developer Portal",
+    "step_4": "Enable Developer Mode in Discord to copy IDs",
+    "step_5": "Create a webhook in your desired channel",
+    "step_6": "Run: node snipe.js"
+  },
+  "discord": {
+    "token": "YOUR_DISCORD_TOKEN_HERE",
+    "password": "YOUR_DISCORD_PASSWORD_HERE"
+  },
+  "server": {
+    "serverId": "YOUR_SERVER_ID_HERE",
+    "channelId": "YOUR_CHANNEL_ID_HERE"
+  },
+  "notifications": {
+    "userToDm": "USER_ID_TO_NOTIFY",
+    "webhookUrl": "YOUR_WEBHOOK_URL_HERE"
+  }
+}
