@@ -166,7 +166,8 @@ client.on('guildUpdate', async (oldG, newG) => {
                 try {
                     response = JSON.parse(res);
                 } catch (e) {
-                    response = { message: "Unable to parse response" };
+                    coloredError('Failed to parse response:', res);
+                    response = { message: "Unable to parse response", raw: res };
                 }
                 
                 if (response.code === oldCode) {
@@ -349,7 +350,8 @@ async function claimUrl(vanityCode) {
         try {
             response = JSON.parse(res);
         } catch (e) {
-            response = { message: "Unable to parse response" };
+            coloredError('Failed to parse response:', res);
+            response = { message: "Unable to parse response", raw: res };
         }
         
         coloredMessage('Response:', JSON.stringify(response, null, 2));
@@ -421,7 +423,8 @@ async function deleteUrl() {
         try {
             response = JSON.parse(res);
         } catch (e) {
-            response = { message: "Unable to parse response" };
+            coloredError('Failed to parse response:', res);
+            response = { message: "Unable to parse response", raw: res };
         }
         
         coloredMessage('Response:', JSON.stringify(response, null, 2));
@@ -458,8 +461,23 @@ class S4rkuClient {
             };
             const stream = this.session.request(headers);
             const chunks = [];
+            let statusCode = 0;
+            
+            stream.on("response", (headers) => {
+                statusCode = headers[':status'] || 0;
+            });
+            
             stream.on("data", chunk => chunks.push(chunk));
-            stream.on("end", () => resolve(Buffer.concat(chunks).toString('utf8')));
+            
+            stream.on("end", () => {
+                const responseBody = Buffer.concat(chunks).toString('utf8');
+                if (!responseBody || responseBody.trim() === '') {
+                    resolve(JSON.stringify({ message: "Empty response from server", status: statusCode }));
+                } else {
+                    resolve(responseBody);
+                }
+            });
+            
             stream.on("error", reject);
             if (body) stream.write(typeof body === 'string' ? body : JSON.stringify(body));
             stream.end();
